@@ -1,35 +1,157 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Main/Main.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/Metronome/beep.wav" type="AudioStream" id=2]
-[ext_resource path="res://Step/Step.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sequencer/StepRow/StepRow.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sequencer/Sequencer.gd" type="Script" id=4]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 
-[node name="player" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 2 )
+[node name="Sequencer" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
 
-[node name="StepRow" type="HBoxContainer" parent="."]
+[node name="NotesRows" type="VBoxContainer" parent="Sequencer"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 25.0
 margin_top = 25.0
+margin_right = -282.0
+margin_bottom = -159.0
 alignment = 1
 
-[node name="Step" parent="StepRow" instance=ExtResource( 3 )]
-margin_left = 495.0
-margin_right = 495.0
-margin_bottom = 575.0
+[node name="StepRow1" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 0.0
+margin_right = 717.0
+margin_bottom = 31.0
 
-[node name="Step2" parent="StepRow" instance=ExtResource( 3 )]
-margin_left = 499.0
-margin_right = 499.0
-margin_bottom = 575.0
+[node name="StepRow2" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 35.0
+margin_right = 717.0
+margin_bottom = 66.0
 
-[node name="Step3" parent="StepRow" instance=ExtResource( 3 )]
-margin_left = 503.0
-margin_right = 503.0
-margin_bottom = 575.0
+[node name="StepRow3" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 70.0
+margin_right = 717.0
+margin_bottom = 101.0
+
+[node name="StepRow4" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 105.0
+margin_right = 717.0
+margin_bottom = 136.0
+
+[node name="StepRow5" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 140.0
+margin_right = 717.0
+margin_bottom = 171.0
+
+[node name="StepRow6" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 175.0
+margin_right = 717.0
+margin_bottom = 206.0
+
+[node name="StepRow7" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 210.0
+margin_right = 717.0
+margin_bottom = 241.0
+
+[node name="StepRow8" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 245.0
+margin_right = 717.0
+margin_bottom = 276.0
+
+[node name="StepRow9" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 280.0
+margin_right = 717.0
+margin_bottom = 311.0
+
+[node name="StepRow10" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 315.0
+margin_right = 717.0
+margin_bottom = 346.0
+
+[node name="StepRow11" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 350.0
+margin_right = 717.0
+margin_bottom = 381.0
+
+[node name="StepRow12" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 0.0
+margin_top = 385.0
+margin_right = 717.0
+margin_bottom = 416.0
+
+[node name="PlayHead" type="ColorRect" parent="Sequencer"]
+anchor_bottom = 1.0
+margin_left = -30.0
+margin_top = 25.0
+margin_bottom = -160.0
+color = Color( 1, 1, 1, 0.572549 )
+
+[node name="player" type="AudioStreamPlayer" parent="Sequencer"]
+stream = ExtResource( 2 )
+
+[connection signal="finished" from="Sequencer/player" to="." method="_on_player_finished"]

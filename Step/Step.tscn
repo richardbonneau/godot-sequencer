@@ -1,8 +1,0 @@
-[gd_scene format=2]
-
-[node name="Step" type="Control"]
-
-[node name="ColorRect" type="ColorRect" parent="."]
-margin_right = 40.0
-margin_bottom = 40.0
-color = Color( 0.984314, 0.521569, 0, 1 )
