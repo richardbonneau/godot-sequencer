@@ -33,6 +33,7 @@ margin_left = 0.0
 margin_top = 0.0
 margin_right = 717.0
 margin_bottom = 31.0
+note = "kick"
 
 [node name="StepRow2" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0
@@ -43,6 +44,7 @@ margin_left = 0.0
 margin_top = 35.0
 margin_right = 717.0
 margin_bottom = 66.0
+note = "snare"
 
 [node name="StepRow3" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0
@@ -53,6 +55,7 @@ margin_left = 0.0
 margin_top = 70.0
 margin_right = 717.0
 margin_bottom = 101.0
+note = "hihat_closed"
 
 [node name="StepRow4" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0
@@ -63,6 +66,7 @@ margin_left = 0.0
 margin_top = 105.0
 margin_right = 717.0
 margin_bottom = 136.0
+note = "hihat_open"
 
 [node name="StepRow5" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0
@@ -149,6 +153,7 @@ anchor_bottom = 1.0
 margin_left = -30.0
 margin_top = 25.0
 margin_bottom = -160.0
+mouse_filter = 2
 color = Color( 1, 1, 1, 0.572549 )
 
 [node name="player" type="AudioStreamPlayer" parent="Sequencer"]

@@ -17,12 +17,9 @@ func _physics_process(delta):
 		play_step()
 
 func play_step():
-	$player.play()
 	move_play_head()
-	play_notes()
+	SequencerPlayer.play_step(current_step)
 
 func move_play_head():
 	$PlayHead.set_position(play_head_positions[current_step - 1].get_global_position())
 
-func play_notes():
-	print("playing note on "+String(current_step))
