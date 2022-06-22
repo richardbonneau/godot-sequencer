@@ -28,8 +28,8 @@ func step_selected():
 #	Instantiate a Sound Scene. Reference it in node_to_add
 	var scene_instance = GlobalVariables.SOUND_SCENE.instance()
 	GlobalVariables.SEQUENCER_LOCATION_IN_TREE.add_child(scene_instance)
-	print(GlobalVariables.BEEP)
-	scene_instance.set_stream(GlobalVariables.BEEP)
+	var sound = get_parent().sound
+	scene_instance.set_stream(sound)
 	
 	var note_to_add = {"instrument":"drums", "note":"kick", "node_ref": scene_instance }
 	SequencerPlayer.add_note(note_to_add, step_number)

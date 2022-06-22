@@ -1,9 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Main/Main.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/Metronome/beep.wav" type="AudioStream" id=2]
 [ext_resource path="res://Sequencer/StepRow/StepRow.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sequencer/Sequencer.gd" type="Script" id=4]
+[ext_resource path="res://Sounds/Drum/kick.wav" type="AudioStream" id=5]
+[ext_resource path="res://Sounds/Drum/snare.wav" type="AudioStream" id=6]
+[ext_resource path="res://Sounds/Drum/hihat_closed.wav" type="AudioStream" id=7]
 
 [node name="Main" type="Control"]
 anchor_right = 1.0
@@ -34,6 +37,7 @@ margin_top = 0.0
 margin_right = 717.0
 margin_bottom = 31.0
 note = "kick"
+sound = ExtResource( 5 )
 
 [node name="StepRow2" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0
@@ -45,6 +49,7 @@ margin_top = 35.0
 margin_right = 717.0
 margin_bottom = 66.0
 note = "snare"
+sound = ExtResource( 6 )
 
 [node name="StepRow3" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0
@@ -56,6 +61,7 @@ margin_top = 70.0
 margin_right = 717.0
 margin_bottom = 101.0
 note = "hihat_closed"
+sound = ExtResource( 7 )
 
 [node name="StepRow4" parent="Sequencer/NotesRows" instance=ExtResource( 3 )]
 anchor_left = 0.0

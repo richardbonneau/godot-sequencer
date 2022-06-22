@@ -1,12 +1,12 @@
 extends Control
 
-export var bpm = 100
+export var bpm = 240
 var time = 0.0
 
 onready var current_step = 0
 onready var play_head_positions = $NotesRows/StepRow1.get_children()
 
-func _physics_process(delta):
+func _process(delta):
 	var bpm_in_seconds = 60.0/bpm
 	
 	time += delta
