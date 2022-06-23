@@ -1,0 +1,6 @@
+[gd_scene format=2]
+
+[node name="Separator" type="ColorRect"]
+margin_left = 240.0
+margin_right = 250.0
+margin_bottom = 600.0

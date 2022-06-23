@@ -5,7 +5,7 @@ extends Control
 
 #var interval = 30000 #samples
 #var interval_sec = 0.25
-#var tempo = 100
+#var tempo = 240
 #func _ready():
 #
 #	interval_sec = 60.0/tempo
@@ -21,14 +21,11 @@ extends Control
 #
 #	for i in 8: #8 is the number of times the stream is gona be copied into the file
 #		stream_data.append_array(new_data)
-#
 #	stream.data = stream_data
 #	stream.loop_mode = 1
 #	stream.loop_end = stream_data.size()/4
 #	$player.play()
-#
 #	$player.stream.save_to_wav("/coolstream.wav")
-#
 #	pass
-#
+##
 

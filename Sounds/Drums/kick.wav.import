@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/snare.wav-b5156f2d7c1ba4972744c676bbf21c8c.sample"
+path="res://.import/kick.wav-064404e91d5bdd765d1de80ec044e723.sample"
 
 [deps]
 
-source_file="res://Sounds/Drum/snare.wav"
-dest_files=[ "res://.import/snare.wav-b5156f2d7c1ba4972744c676bbf21c8c.sample" ]
+source_file="res://Sounds/Drums/kick.wav"
+dest_files=[ "res://.import/kick.wav-064404e91d5bdd765d1de80ec044e723.sample" ]
 
 [params]
 

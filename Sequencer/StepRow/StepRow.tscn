@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sequencer/Step/Step.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sequencer/StepRow/StepRow.gd" type="Script" id=2]
+[ext_resource path="res://Sequencer/StepRow/Separator.tscn" type="PackedScene" id=3]
 
 [node name="StepRow" type="HBoxContainer"]
 anchor_left = 0.5
@@ -34,24 +35,27 @@ step_number = 2
 [node name="Step3" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 121.0
-margin_right = 121.0
+margin_left = 120.0
+margin_right = 120.0
 margin_bottom = 0.0
 step_number = 3
 
 [node name="Step4" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 182.0
-margin_right = 182.0
+margin_left = 180.0
+margin_right = 180.0
 margin_bottom = 0.0
 step_number = 4
+
+[node name="Separator" parent="." instance=ExtResource( 3 )]
+margin_right = 240.0
 
 [node name="Step5" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 243.0
-margin_right = 243.0
+margin_left = 244.0
+margin_right = 244.0
 margin_bottom = 0.0
 step_number = 5
 
@@ -74,24 +78,28 @@ step_number = 7
 [node name="Step8" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 425.0
-margin_right = 425.0
+margin_left = 424.0
+margin_right = 424.0
 margin_bottom = 0.0
 step_number = 8
+
+[node name="Separator2" parent="." instance=ExtResource( 3 )]
+margin_left = 484.0
+margin_right = 484.0
 
 [node name="Step9" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 486.0
-margin_right = 486.0
+margin_left = 488.0
+margin_right = 488.0
 margin_bottom = 0.0
 step_number = 9
 
 [node name="Step10" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 547.0
-margin_right = 547.0
+margin_left = 548.0
+margin_right = 548.0
 margin_bottom = 0.0
 step_number = 10
 
@@ -111,27 +119,31 @@ margin_right = 668.0
 margin_bottom = 0.0
 step_number = 12
 
+[node name="Separator3" parent="." instance=ExtResource( 3 )]
+margin_left = 728.0
+margin_right = 728.0
+
 [node name="Step13" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 729.0
-margin_right = 729.0
+margin_left = 732.0
+margin_right = 732.0
 margin_bottom = 0.0
 step_number = 13
 
 [node name="Step14" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 790.0
-margin_right = 790.0
+margin_left = 792.0
+margin_right = 792.0
 margin_bottom = 0.0
 step_number = 14
 
 [node name="Step15" parent="." instance=ExtResource( 1 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 851.0
-margin_right = 851.0
+margin_left = 852.0
+margin_right = 852.0
 margin_bottom = 0.0
 step_number = 15
 

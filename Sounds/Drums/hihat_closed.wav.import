@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/kick.wav-b10e9b587c88bc7b386bf51737d1d914.sample"
+path="res://.import/hihat_closed.wav-63275d239475653b9cd08e8e8d7c62d2.sample"
 
 [deps]
 
-source_file="res://Sounds/Drum/kick.wav"
-dest_files=[ "res://.import/kick.wav-b10e9b587c88bc7b386bf51737d1d914.sample" ]
+source_file="res://Sounds/Drums/hihat_closed.wav"
+dest_files=[ "res://.import/hihat_closed.wav-63275d239475653b9cd08e8e8d7c62d2.sample" ]
 
 [params]
 
