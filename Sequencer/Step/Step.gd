@@ -36,4 +36,4 @@ func step_selected():
 	SequencerPlayer.add_note(note_to_add, step_number)
 
 func step_unselected():
-	SequencerPlayer.remove_note()
+	SequencerPlayer.remove_note(get_instance_id(), step_number)
