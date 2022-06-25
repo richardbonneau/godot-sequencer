@@ -19,7 +19,7 @@ config/icon="res://icon.png"
 GlobalVariables="*res://GlobalScripts/GlobalVariables.gd"
 Colors="*res://GlobalScripts/Colors.gd"
 SequencerPlayer="*res://GlobalScripts/SequencerPlayer.gd"
-Instruments="*res://GlobalScripts/Instruments.gd"
+InstrumentsManager="*res://GlobalScripts/InstrumentsManager.gd"
 
 [physics]
 

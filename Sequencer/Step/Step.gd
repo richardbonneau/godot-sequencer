@@ -30,6 +30,7 @@ func step_selected():
 	scene_instance = GlobalVariables.SOUND_SCENE.instance()
 	GlobalVariables.SEQUENCER_LOCATION_IN_TREE.add_child(scene_instance)
 	var sound_stream = get_parent().sound_stream
+	
 	scene_instance.set_stream(sound_stream)
 	
 	var note_to_add = {"node_ref": scene_instance, "step_id": get_instance_id() }

@@ -1,0 +1,49 @@
+extends Node
+
+var available_notes = {
+	"percussion": [
+		"kick","snare","hihat_closed","hihat_open","ride","tom1","tom2","tom3","crash1","crash2","crash3","cowbell"
+	],
+	"melodic":[
+		"C","C#","D","D#","E","F","F#","G","G#","A","A#","B"
+	]
+}
+
+var instruments = {
+	"Drums": {
+		"notes_types":"percussion",
+		"notes": available_notes.percussion,
+	},
+	"Bass": {
+		"notes_types":"melodic",
+		"notes":available_notes.melodic,
+		"sound_stream": load("res://Sounds/Bass/bass.wav")
+	}
+}
+
+func change_instrument(new_instrument):
+	var notes = instruments[new_instrument].notes
+	var notes_type = instruments[new_instrument].notes_types
+	
+	for i in GlobalVariables.LABELS_ROW_LOCATION_IN_TREE.get_child_count():
+		#	Rename Labels
+		var label = GlobalVariables.LABELS_ROW_LOCATION_IN_TREE.get_child(i)
+		label.text = notes[i]
+		
+	#	Change the associated notes and pitch on the StepRows
+		var step_row = GlobalVariables.NOTES_ROWS_LOCATION_IN_TREE.get_child(i)
+		step_row.note = notes[i]
+		if notes_type == "percussion":
+			step_row.sound_stream = set_percussion_sound(notes[i])
+		elif notes_type == "melodic":
+			step_row.sound_stream = instruments[new_instrument].sound_stream.duplicate()
+			step_row.sound_stream.mix_rate = set_instrument_pitch(i)
+	
+
+func set_instrument_pitch(note_index):
+	var pitch = 1 + (0.05 * note_index)
+	print(pitch)
+	return pitch * 44100.0
+
+func set_percussion_sound(note):
+	return load("res://Sounds/Drums/"+note+".wav")
